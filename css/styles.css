@@ -34,7 +34,10 @@ button {
 }
 
 .header {
+    max-width: 1440px;
+    margin: 0 auto;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header .page-logo {
@@ -68,6 +71,7 @@ button {
 .nav-link {
     padding: 24px 0;
 }
+
 .nav-list {
     color:#2E2F42;
         font-family: "Roboto";
@@ -111,8 +115,6 @@ color:#434455;
 .header-container {
     display: flex;
     justify-content: space-between;
-    
-
 }
 
 .section {
@@ -121,10 +123,15 @@ color:#434455;
 
 .section-one {
     background:#2E2F42;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 188px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
  .main-title {
@@ -140,10 +147,7 @@ color:#FFF;
   
 }
 
-
-
-
- .order-button {
+.order-button {
         background:#4D5AE5;
         color:#FFF;
             font-family: "Roboto", sans-serif;
@@ -162,7 +166,6 @@ color:#FFF;
  .order-button:focus {
     background:#404BBF;
 }
-
 
 .visually-hidden-title {
     color:#2E2F42;
@@ -194,6 +197,19 @@ color:#FFF;
 
 .benefits-item {
     flex-basis: calc((100% - 24px * 3) / 4 )
+}
+
+.benefits-wrapper {
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 .benefits-subtitle {
@@ -252,7 +268,6 @@ color:#434455;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
-/* -------------------------------------------------- */
 
 .title {
     color: #2E2F42;
@@ -279,13 +294,19 @@ color:#434455;
     width: calc((100% - 24px * 2) / 3);
 }
 
+.portfolio-list-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    
+        
+}
+
  .portfolio-container {
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
     border-top: none;
     /* max-height: 120px; */
 } 
-/* --------------------------------------------- */
+
 .portfolio-subtitle {
     margin-bottom: 8px;
     color: #2E2F42;
@@ -303,11 +324,7 @@ color:#434455;
 
 }
 
-  
-
-
-
-.footer {
+  .footer {
 background: #2E2F42;
 padding: 100px 0;
 }
@@ -332,10 +349,7 @@ padding: 100px 0;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.32px;
-        max-width: 264px; 
-        /* margin-top: 18px; */
-        
-           
+        max-width: 264px;        
 }
 
 .container {
@@ -344,8 +358,5 @@ padding: 100px 0;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    /* outline: 2px solid blue;
-    outline-offset: -2px; */
 }
 
